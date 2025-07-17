@@ -8,35 +8,58 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 220 13% 6%;
+    --foreground: 220 13% 96%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 220 13% 8%;
+    --card-foreground: 220 13% 96%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 220 13% 8%;
+    --popover-foreground: 220 13% 96%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 142 76% 36%;
+    --primary-foreground: 220 13% 6%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 265 89% 78%;
+    --secondary-foreground: 220 13% 6%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 201 96% 32%;
+    --accent-foreground: 220 13% 96%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --muted: 220 13% 14%;
+    --muted-foreground: 220 9% 46%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 220 13% 96%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 13% 20%;
+    --input: 220 13% 14%;
+    --ring: 142 76% 36%;
 
     --radius: 0.5rem;
+
+    /* Gaming-specific colors */
+    --gaming-primary: 142 76% 36%;
+    --gaming-secondary: 265 89% 78%;
+    --gaming-accent: 201 96% 32%;
+    --gaming-warning: 38 92% 50%;
+    --gaming-danger: 0 84% 60%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--gaming-primary)), hsl(var(--gaming-accent)));
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--gaming-secondary)), hsl(var(--gaming-primary)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(220 13% 10%));
+    --gradient-hero: linear-gradient(135deg, hsl(220 13% 6%) 0%, hsl(220 13% 8%) 50%, hsl(220 13% 6%) 100%);
+
+    /* Shadows */
+    --shadow-gaming: 0 8px 32px hsl(var(--gaming-primary) / 0.3);
+    --shadow-card: 0 4px 24px hsl(220 13% 0% / 0.4);
+    --shadow-glow: 0 0 20px hsl(var(--gaming-primary) / 0.5);
+
+    /* Animation durations */
+    --transition-fast: 0.15s;
+    --transition-normal: 0.3s;
+    --transition-slow: 0.5s;
 
     --sidebar-background: 0 0% 98%;
 
